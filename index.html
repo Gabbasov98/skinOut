@@ -1,0 +1,608 @@
+<!DOCTYPE html> <html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <meta name="description" content="Продать скины CS-GO и DOTA 2">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta name="format-detection" content="telephone=no">
+    <link href="fonts/Roboto-Regular.woff2" as="font" type="fonts/woff2" crossorigin>
+    <link href="fonts/Roboto-Light.woff2" as="font" type="fonts/woff2" crossorigin>
+<!--    <link rel="stylesheet" href="css/animate.css">-->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <!--*************-->
+            <div class="container-header">
+                <div class="container-hamburg" onclick="myFunction(this)" title="Работа с меню" aria-label="Кнопка для работы с меню">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <script>
+                    function myFunction(x) {
+                        x.classList.toggle("change");
+                    }
+                </script>
+                <nav class="item-menu ">
+                    <ul class="header__menu">
+                        <li><a href="#">Продать скины</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">бонусы</a></li>
+                        <li><img class="header_logo" src="img/head-icon.svg" alt="" /></li>
+                        <li><a href="#">гарантии</a></li>
+                        <li><a href="#">блог</a></li>
+                        <li><a href="#">купить скины</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero">
+            <!--*************-->
+            <div class="slider-hero swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="swiper-lazy" src="img/h-bg.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-lazy" src="img/h-bg.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-lazy" src="img/h-bg.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="hero-pagination"></div>
+            <div class="wrapper-btn">
+                <div class="fon-box-btn-hero">
+                    <div class="box-hero-btn">
+                        <img src="img/f-logo.svg" alt="" class="logo-btn">
+                    </div>
+                </div>
+                <a href="#sell-form" class="btn btn-hero ">
+                    <p class="marquee">продать скины <strong>CS-GO</strong> и <strong>DOTA 2</strong></p>
+                </a>
+                <div class="arr-btn"></div>
+            </div>
+        </section>
+
+        <section class="sell-form" id="sell-form">
+            <!--*************-->
+            <div class="bg-sell-left"></div>
+            <div class="bg-sell-right"></div>
+            <div class="container">
+                <div class="sell-wrapper">
+                    <div class="left-sell">
+                        <form action="" class="form-left-sell">
+                            <label>Вставьте свою ссылку на обмен</label>
+                            <input type="text" placeholder="от ac***va" name="link-user">
+                            <p class="title-form-left-sell">Авторизируйтесь через</p>
+                            <a href="/" class="link-str-left">steam</a>
+                            <p class="cheleng">Для того, чтобы обменять вещи на деньги</p>
+                            <a href="/" class="btn input-steam">Войти через STEAM</a>
+                        </form>
+                    </div>
+                    <div class="right-sell">
+                        <div class="box-item-right-sell">
+                            <div class="item-right-sell"></div>
+                            <div class="item-right-sell"></div>
+                            <div class="item-right-sell"></div>
+                            <div class="item-right-sell"></div>
+                            <div class="item-right-sell"></div>
+                            <div class="item-right-sell"></div>
+                            <div class="item-right-sell"></div>
+                            <div class="item-right-sell"></div>
+                        </div>
+                        <form action="" class="form-right-sell">
+                            <label for="">Ваш E-mail</label>
+                            <input type="email" name="email" placeholder="ac***va@mail.ru">
+                            <label for="">Ваши платежные реквизиты</label>
+                            <input type="text" placeholder="4020 *** *** ***">
+                            <div class="box-bonus-form">
+                                <div class="item-bonus-form">
+                                    <p>Сумма оценки</p>
+                                    <div class="price-bonus">
+                                        <span>3 421.80</span>
+                                        <span>₽</span>
+                                    </div>
+                                </div>
+                                <div class="item-bonus-form">
+                                    <p>Бонусные</p>
+                                    <div class="price-bonus">
+                                        <span>3 421.80</span>
+                                        <span>₽</span>
+                                    </div>
+                                </div>
+                                <div class="item-bonus-form">
+                                    <p>Комиссия за перевод</p>
+                                    <div class="price-bonus">
+                                        <span>3 421.80</span>
+                                        <span>₽</span>
+                                    </div>
+                                </div>
+                                <div class="item-bonus-form">
+                                    <p>Всего к выплате</p>
+                                    <div class="price-bonus">
+                                        <span>3 421.80</span>
+                                        <span>₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-sub" type="submit">Получить деньги</button>
+                        </form>
+                    </div>
+                </div>
+                <h3 class="title-sell">Хочешь <a href="/">продать скины КС ГО</a> и <a href="/">Dota 2</a> ?</h3>
+                <h3 class="sub-title-sell">Тогда тебе на <a href="/">SKIN-OUT</a></h3>
+                <div class="line-sell">
+                    <img src="img/line-sell.svg" alt="">
+                </div>
+
+                <p class="txt-sell">
+                    Здесь ты можешь, совершенно не напрягаясь сдать свои скины в любом количестве, моментально получив реальные средства на любую платежную систему или банковскую карту. Никаких аукционов, поисков покупателя и сложных схем. Все просто: зайди через аккаунт
+                    Steam, выбери вещи КС ГО или Дота 2 из инвентаря, которые тебе мешают и получи деньги в течение нескольких секунд. Lis-Skins — это самый легкий и надежный способ вывести скины в деньги.
+                </p>
+            </div>
+        </section>
+
+        <section class="transaction">
+            <!--*************-->
+            <div class="container">
+                <div class="wrap-trans">
+                    <div class="left-trans wow fadeIn slower" data-wow-delay="1.5s">
+                        <img src="img/img-trans.png" alt="img">
+                    </div>
+                    <div class="right-trans">
+                        <h2 class="wow fadeInRightBig" data-wow-delay="2s">Последние сделки</h2>
+                        <div class="wrap-img-right-trans infinite ">
+                            <img class="wow fadeInRight" data-wow-delay="3s" src="img/const-logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="item-trans wow fadeInUp " data-wow-delay="1s">
+                    <div class="lost-end swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="duble-item">
+                                    <div class="time-box-item-trans">
+                                        <span class="price-item-trans">3 421.80 ₽</span>
+                                        <p>от ac***va</p>
+                                        <span class="time-trans">4 минуты назад</span>
+                                    </div>
+                                    <hr class="line-modal">
+                                    <div class="time-box-item-trans">
+                                        <span class="price-item-trans">3 421.80 ₽</span>
+                                        <p>от ac***va</p>
+                                        <span class="time-trans">4 минуты назад</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="duble-item">
+                                    <div class="time-box-item-trans">
+                                        <span class="price-item-trans">3 421.80 ₽</span>
+                                        <p>от ac***va</p>
+                                        <span class="time-trans">4 минуты назад</span>
+                                    </div>
+                                    <hr class="line-modal">
+                                    <div class="time-box-item-trans">
+                                        <span class="price-item-trans">3 421.80 ₽</span>
+                                        <p>от ac***va</p>
+                                        <span class="time-trans">4 минуты назад</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="duble-item">
+                                    <div class="time-box-item-trans">
+                                        <span class="price-item-trans">3 421.80 ₽</span>
+                                        <p>от ac***va</p>
+                                        <span class="time-trans">4 минуты назад</span>
+                                    </div>
+                                    <hr class="line-modal">
+                                    <div class="time-box-item-trans">
+                                        <span class="price-item-trans">3 421.80 ₽</span>
+                                        <p>от ac***va</p>
+                                        <span class="time-trans">4 минуты назад</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lost-pagination"></div>
+                    <div class="time-box-item-trans deck-trans">
+                        <span class="price-item-trans">3 421.80 ₽</span>
+                        <p>от ac***va</p>
+                        <span class="time-trans">4 минуты назад</span>
+                    </div>
+                    <div class="time-box-item-trans deck-trans">
+                        <span class="price-item-trans">3 421.80 ₽</span>
+                        <p>от ac***va</p>
+                        <span class="time-trans">4 минуты назад</span>
+                    </div>
+                    <div class="time-box-item-trans deck-trans">
+                        <span class="price-item-trans">3 421.80 ₽</span>
+                        <p>от ac***va</p>
+                        <span class="time-trans">4 минуты назад</span>
+                    </div>
+                    <div class="time-box-item-trans deck-trans">
+                        <span class="price-item-trans">3 421.80 ₽</span>
+                        <p>от ac***va</p>
+                        <span class="time-trans">4 минуты назад</span>
+                    </div>
+                    <div class="time-box-item-trans deck-trans">
+                        <span class="price-item-trans">3 421.80 ₽</span>
+                        <p>от ac***va</p>
+                        <span class="time-trans">4 минуты назад</span>
+                    </div>
+                    <div class="time-box-item-trans deck-trans">
+                        <span class="price-item-trans">3 421.80 ₽</span>
+                        <p>от ac***va</p>
+                        <span class="time-trans">4 минуты назад</span>
+                    </div>
+                </div>
+
+                <div class="box-summ-trans">
+                    <div class="item-summ-trans">
+                        <span>4 600 450</span>
+                        <p>вещей продано</p>
+                    </div>
+                    <div class="item-summ-trans">
+                        <span>4 478</span>
+                        <p>всего отзывов</p>
+                    </div>
+                    <div class="item-summ-trans">
+                        <span>9.72</span>
+                        <p>средняя оценка</p>
+                    </div>
+                    <div class="item-summ-trans">
+                        <span>5</span>
+                        <p>лет на рынке</p>
+                    </div>
+                </div>
+                <div class="divider wow fadeIn">
+                    <img src="img/div-logo.svg" alt="">
+                </div>
+                <div class="wrapper-trans ">
+                    <div class="slider-trans swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item-trans-slid">
+                                    <span>23 часа / FT / 0.2571</span>
+                                    <div class="img-ammo">
+                                        <img src="img/amo-img.png" alt="img">
+                                    </div>
+                                    <h4>AK-47 | Phantom Disruptor</h4>
+                                    <span class="price-slider-trans">321.80 ₽</span>
+                                    <button class="btn btn-slider">в корзину</button>
+                                    <span class="span-buy">купили х161</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item-trans-slid">
+                                    <span>23 часа / FT / 0.2571</span>
+                                    <div class="img-ammo">
+                                        <img src="img/amo-img.png" alt="img">
+                                    </div>
+                                    <h4>AK-47 | Phantom Disruptor</h4>
+                                    <span class="price-slider-trans">321.80 ₽</span>
+                                    <button class="btn btn-slider">в корзину</button>
+                                    <span class="span-buy">купили х161</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item-trans-slid">
+                                    <span>23 часа / FT / 0.2571</span>
+                                    <div class="img-ammo">
+                                        <img src="img/amo-img.png" alt="img">
+                                    </div>
+                                    <h4>AK-47 | Phantom Disruptor</h4>
+                                    <span class="price-slider-trans">321.80 ₽</span>
+                                    <button class="btn btn-slider">в корзину</button>
+                                    <span class="span-buy">купили х161</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item-trans-slid">
+                                    <span>23 часа / FT / 0.2571</span>
+                                    <div class="img-ammo">
+                                        <img src="img/amo-img.png" alt="img">
+                                    </div>
+                                    <h4>AK-47 | Phantom Disruptor</h4>
+                                    <span class="price-slider-trans">321.80 ₽</span>
+                                    <button class="btn btn-slider">в корзину</button>
+                                    <span class="span-buy">купили х161</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item-trans-slid">
+                                    <span>23 часа / FT / 0.2571</span>
+                                    <div class="img-ammo">
+                                        <img src="img/amo-img.png" alt="img">
+                                    </div>
+                                    <h4>AK-47 | Phantom Disruptor</h4>
+                                    <span class="price-slider-trans">321.80 ₽</span>
+                                    <button class="btn btn-slider">в корзину</button>
+                                    <span class="span-buy">купили х161</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item-trans-slid">
+                                    <span>23 часа / FT / 0.2571</span>
+                                    <div class="img-ammo">
+                                        <img src="img/amo-img.png" alt="img">
+                                    </div>
+                                    <h4>AK-47 | Phantom Disruptor</h4>
+                                    <span class="price-slider-trans">321.80 ₽</span>
+                                    <button class="btn btn-slider">в корзину</button>
+                                    <span class="span-buy">купили х161</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trans-pagination"></div>
+                    <div class="trans-reсomm-nav">
+                        <div class="trans-button-next"></div>
+                        <div class="trans-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="response">
+            <!--*************-->
+            <div class="container">
+                <div class="wrap-trans">
+                    <div class="left-resp">
+                        <div class="wrap-img-right-trans ">
+                            <img class="wow fadeInLeftBig" data-wow-delay="3s" src="img/const-logo.png" alt="">
+                        </div>
+                        <h2 class="wow fadeInLeftBig" data-wow-delay="2s">отзывы skin-out</h2>
+                    </div>
+                    <div class="right-resp wow fadeIn " data-wow-delay="1.5s">
+                        <img src="img/resp-img.png" alt="">
+                    </div>
+                </div>
+                <div class="block-response wow fadeInUp" data-wow-delay="1s">
+                    <div class="summ-resp">
+                        <p><span>4.8</span>Excellent</p>
+                        <div class="box-stars-summ">
+                            <div>
+                                <img src="img/star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/star.svg" alt="">
+                            </div>
+                        </div>
+                        <span class="summ-rev">3024 Reviews</span>
+                        <div class="res-logo">
+                            <img src="img/f-logo.svg" alt="">
+                        </div>
+                    </div>
+                    <hr class="line-modal">
+                    <div id="respon" class="slider-response swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cart-recpon">
+                                    <div class="box-stars">
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <h5>Отличный сайт</h5>
+                                    <p class="descr-rev">Отличный сайт, сначала сомневался, очень сильно сомневался, так как несколько раз уже меня...</p>
+                                    <p class="autor-rev">Danil Chenal</p>
+                                    <p class="data-rev">21 марта 2020</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cart-recpon">
+                                    <div class="box-stars">
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <h5>Отличный сайт</h5>
+                                    <p class="descr-rev">Отличный сайт, сначала сомневался, очень сильно сомневался, так как несколько раз уже меня...</p>
+                                    <p class="autor-rev">Danil Chenal</p>
+                                    <p class="data-rev">21 марта 2020</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cart-recpon">
+                                    <div class="box-stars">
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <h5>Отличный сайт</h5>
+                                    <p class="descr-rev">Отличный сайт, сначала сомневался, очень сильно сомневался, так как несколько раз уже меня...</p>
+                                    <p class="autor-rev">Danil Chenal</p>
+                                    <p class="data-rev">21 марта 2020</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cart-recpon">
+                                    <div class="box-stars">
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="img/star.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <h5>Отличный сайт</h5>
+                                    <p class="descr-rev">Отличный сайт, сначала сомневался, очень сильно сомневался, так как несколько раз уже меня...</p>
+                                    <p class="autor-rev">Danil Chenal</p>
+                                    <p class="data-rev">21 марта 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="response-pagination"></div>
+                    <div class="slider-resp-nav">
+                        <div class="swiper1-button-next"></div>
+                        <div class="swiper1-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommend">
+            <!--*************-->
+            <div class="container">
+                <div class="wrap-img-right-trans ">
+                    <img class="wow fadeIn" src="img/const-logo.png" alt="">
+                </div>
+                <h2>блогеры рекомендуют</h2>
+                <div class="wrap-content-recom">
+                    <div class="slider-recomm swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/i-s1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/i-s2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/i-s3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recomm-pagination"></div>
+                    <div class="slider-reсomm-nav">
+                        <div class="swiper3-button-next"></div>
+                        <div class="swiper3-button-prev"></div>
+                    </div>
+                </div>
+                <div class="form-recom">
+                    <p class="title-form-recom">ПОДПИШИСЬ ЗДЕСЬ, ЧТОБЫ ПОЛУЧАТЬ ПОСЛЕДНИЕ НОВОСТИ И ИНТЕРЕСНЫЕ ПРЕДЛОЖЕНИЯ</p>
+                    <form action="" class="recommend-form">
+                        <input type="text" placeholder="Укажите свой e-mail">
+                        <button class="btn btn-recom">Подписаться</button>
+                    </form>
+                    <p class="conf">Подписавшись, ты соглашаешься c <a href="">Правилами Использования</a> сервиса и принимаешь
+                        <a href="">Политику Конфиденциальности</a> .</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="modal-footer-logo">
+    <img src="img/f-logo.svg" alt="">
+</div>
+<div class="f-box-menu">
+    <div class="f-left">
+        <ul>
+            <li><a href="">Блог</a></li>
+            <li><a href="">Контакты</a></li>
+            <li><a href="">Оферта</a></li>
+            <li><a href="">Политика конфиденциальности</a></li>
+            <li><a href="">Как продать все вещи в Стиме сразу</a></li>
+        </ul>
+    </div>
+    <div class="f-center">
+        <ul>
+            <li><a href="">Купить скины</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Отзывы о нас</a></li>
+            <li><a href="">Продать вещи Steam</a></li>
+        </ul>
+    </div>
+    <div class="f-right">
+        <ul>
+            <li><a href="">Гарантии</a></li>
+            <li><a href="">Как это работает</a></li>
+            <li><a href="">Правила использования</a></li>
+            <li><a href="">Продать скины КС ГО</a></li>
+        </ul>
+    </div>
+</div>
+<div class="f-low-box">
+    <div class="footer-txt">
+        <p>Beneficiary:INTERNATIONAL BUSINESS SYSTEMS S.R.L.</p>
+        <p>Reg. number:3-102-693823</p>
+        <p>Beneficiary's address:SAN JOSE-SANTA ANA,THREE HUNDRED AND FIFTY METERS OF THE RESTAURANT CEVICHE DEL REY, COSTA-RICA</p>
+    </div>
+    <div class="footer-logo">
+        <img src="img/f-logo.svg" alt="">
+    </div>
+</div>
+
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
