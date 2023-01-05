@@ -15,6 +15,7 @@
 <!--    <link rel="stylesheet" href="css/animate.css">-->
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -22,71 +23,84 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <!--*************-->
-            <div class="container-header">
-                <div class="container-hamburg" onclick="myFunction(this)" title="Работа с меню" aria-label="Кнопка для работы с меню">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <script>
-                    function myFunction(x) {
-                        x.classList.toggle("change");
-                    }
-                </script>
-                <nav class="item-menu ">
-                    <ul class="header__menu">
-                        <li><a href="#">Продать скины</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">бонусы</a></li>
-                        <li><img class="header_logo" src="img/head-icon.svg" alt="" /></li>
-                        <li><a href="#">гарантии</a></li>
-                        <li><a href="#">блог</a></li>
-                        <li><a href="#">купить скины</a></li>
-                    </ul>
-                </nav>
-            </div>
+            
+<div class="container-header">
+    <div class="head-modal-menu">
+        <div class="modal-head-logo">
+            <img src="img/f-logo.svg" alt="">
+        </div>
+        <nav class="mod-item-menu ">
+            <ul class="mod-header__menu">
+                <li><a href="#">Продать скины</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">бонусы</a></li>
+                <li><a href="#">гарантии</a></li>
+                <li><a href="#">блог</a></li>
+                <li><a href="#">купить скины</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="btn-modal">
+        <div class="container-hamburg" onclick="myFunction(this)" title="Работа с меню" aria-label="Кнопка для работы с меню">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <nav class="item-menu">
+        <ul class="header__menu">
+            <li><a href="#">Продать скины</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">бонусы</a></li>
+            <li><img class="header_logo" src="img/head-icon.svg" alt=""/></li>
+            <li><a href="#">гарантии</a></li>
+            <li><a href="#">блог</a></li>
+            <li><a href="#">купить скины</a></li>
+        </ul>
+    </nav>
+    
+</div>
+
+
+
+
+
         </header>
 
-        <section class="hero">
-            <!--*************-->
-            <div class="slider-hero swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img class="swiper-lazy" src="img/h-bg.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="swiper-lazy" src="img/h-bg.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="swiper-lazy" src="img/h-bg.png" alt="" />
-                    </div>
-                </div>
+        <section class="hero"> <!--*************-->
+            <div class="slider-hero">
+                <img class="swiper-lazy" src="img/h-bg1.webp" alt=""/>
             </div>
-            <div class="hero-pagination"></div>
             <div class="wrapper-btn">
                 <div class="fon-box-btn-hero">
                     <div class="box-hero-btn">
                         <img src="img/f-logo.svg" alt="" class="logo-btn">
                     </div>
                 </div>
-                <a href="#sell-form" class="btn btn-hero ">
-                    <p class="marquee">продать скины <strong>CS-GO</strong> и <strong>DOTA 2</strong></p>
-                </a>
-                <div class="arr-btn"></div>
+                <a href="#sell-form" class="btn btn-hero">продать скины <strong>CS-GO</strong>  и <strong>DOTA 2</strong></a>
+                <div class="big-arr">
+                    <img src="img/big-arr.svg" alt="">
+                </div>
+                <!--<div class="arr-btn"></div> -->
             </div>
         </section>
 
-        <section class="sell-form" id="sell-form">
-            <!--*************-->
-            <div class="bg-sell-left"></div>
-            <div class="bg-sell-right"></div>
+        <section class="sell-form" id="sell-form"> <!--*************-->
+            <div class="bg-sell-right">
+                <img src="img/bg-sell-right.png" alt="">
+            </div>
             <div class="container">
                 <div class="sell-wrapper">
                     <div class="left-sell">
                         <form action="" class="form-left-sell">
                             <label>Вставьте свою ссылку на обмен</label>
-                            <input type="text" placeholder="от ac***va" name="link-user">
+                            <input type="text" placeholder="от ac***va" name="link-user" >
                             <p class="title-form-left-sell">Авторизируйтесь через</p>
                             <a href="/" class="link-str-left">steam</a>
                             <p class="cheleng">Для того, чтобы обменять вещи на деньги</p>
@@ -143,34 +157,34 @@
                         </form>
                     </div>
                 </div>
-                <h3 class="title-sell">Хочешь <a href="/">продать скины КС ГО</a> и <a href="/">Dota 2</a> ?</h3>
+                <h3 class="title-sell">Хочешь <a href="/">продать скины КС ГО</a>  и <a href="/">Dota 2</a> ?</h3>
                 <h3 class="sub-title-sell">Тогда тебе на <a href="/">SKIN-OUT</a></h3>
                 <div class="line-sell">
                     <img src="img/line-sell.svg" alt="">
                 </div>
-
                 <p class="txt-sell">
-                    Здесь ты можешь, совершенно не напрягаясь сдать свои скины в любом количестве, моментально получив реальные средства на любую платежную систему или банковскую карту. Никаких аукционов, поисков покупателя и сложных схем. Все просто: зайди через аккаунт
-                    Steam, выбери вещи КС ГО или Дота 2 из инвентаря, которые тебе мешают и получи деньги в течение нескольких секунд. Lis-Skins — это самый легкий и надежный способ вывести скины в деньги.
+                    Здесь ты можешь, совершенно не напрягаясь сдать свои скины в любом количестве, моментально получив реальные средства на любую платежную систему или банковскую карту. Никаких аукционов, поисков покупателя и сложных схем. Все просто: зайди через аккаунт Steam, выбери вещи КС ГО или Дота 2 из инвентаря, которые тебе мешают и получи деньги в течение нескольких секунд. Lis-Skins — это самый легкий и надежный способ вывести скины в деньги.
                 </p>
             </div>
         </section>
 
-        <section class="transaction">
-            <!--*************-->
+        <section class="transaction"> <!--*************-->
+            <div class="bg-sell-left">
+                <img src="img/bg-sell-left.png" alt="">
+            </div>
             <div class="container">
                 <div class="wrap-trans">
-                    <div class="left-trans wow fadeIn slower" data-wow-delay="1.5s">
-                        <img src="img/img-trans.png" alt="img">
+                    <div class="left-trans">
+                        <img src="img/img-trans.webp" alt="img">
                     </div>
                     <div class="right-trans">
-                        <h2 class="wow fadeInRightBig" data-wow-delay="2s">Последние сделки</h2>
-                        <div class="wrap-img-right-trans infinite ">
-                            <img class="wow fadeInRight" data-wow-delay="3s" src="img/const-logo.png" alt="">
+                        <h2>Последние сделки</h2>
+                        <div class="wrap-img-right-trans rotate1 ">
+                            <img src="img/const-logo.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="item-trans wow fadeInUp " data-wow-delay="1s">
+                <div class="item-trans">
                     <div class="lost-end swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -360,21 +374,20 @@
             </div>
         </section>
 
-        <section class="response">
-            <!--*************-->
+        <section class="response"> <!--*************-->
             <div class="container">
                 <div class="wrap-trans">
                     <div class="left-resp">
-                        <div class="wrap-img-right-trans ">
-                            <img class="wow fadeInLeftBig" data-wow-delay="3s" src="img/const-logo.png" alt="">
+                        <div class="wrap-img-right-trans rotate2">
+                            <img src="img/const-logo.png" alt="">
                         </div>
-                        <h2 class="wow fadeInLeftBig" data-wow-delay="2s">отзывы skin-out</h2>
+                        <h2>отзывы skin-out</h2>
                     </div>
-                    <div class="right-resp wow fadeIn " data-wow-delay="1.5s">
-                        <img src="img/resp-img.png" alt="">
+                    <div class="right-resp ">
+                        <img src="img/resp-img.webp" alt="">
                     </div>
                 </div>
-                <div class="block-response wow fadeInUp" data-wow-delay="1s">
+                <div class="block-response">
                     <div class="summ-resp">
                         <p><span>4.8</span>Excellent</p>
                         <div class="box-stars-summ">
@@ -513,10 +526,9 @@
             </div>
         </section>
 
-        <section class="recommend">
-            <!--*************-->
+        <section class="recommend"><!--*************-->
             <div class="container">
-                <div class="wrap-img-right-trans ">
+                <div class="wrap-img-right-trans rotate3">
                     <img class="wow fadeIn" src="img/const-logo.png" alt="">
                 </div>
                 <h2>блогеры рекомендуют</h2>
@@ -524,13 +536,16 @@
                     <div class="slider-recomm swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="img/i-s1.jpg" alt="">
+                                <!-- <a data-caption="Фото 1" data-fancybox href="img/i-s1.webp">
+                                     <img src="img/i-s1.webp" alt="" />
+                                 </a>-->
+                                <img src="img/i-s1.webp" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/i-s2.jpg" alt="">
+                                <img src="img/i-s2.webp" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/i-s3.jpg" alt="">
+                                <img src="img/i-s3.webp" alt="">
                             </div>
                         </div>
                     </div>
@@ -546,51 +561,53 @@
                         <input type="text" placeholder="Укажите свой e-mail">
                         <button class="btn btn-recom">Подписаться</button>
                     </form>
-                    <p class="conf">Подписавшись, ты соглашаешься c <a href="">Правилами Использования</a> сервиса и принимаешь
+                    <p class="conf">Подписавшись, ты соглашаешься c <a href="">Правилами Использования</a>  сервиса и принимаешь
                         <a href="">Политику Конфиденциальности</a> .</p>
                 </div>
             </div>
         </section>
 
         <footer class="footer">
-            <div class="modal-footer-logo">
-    <img src="img/f-logo.svg" alt="">
-</div>
-<div class="f-box-menu">
-    <div class="f-left">
-        <ul>
-            <li><a href="">Блог</a></li>
-            <li><a href="">Контакты</a></li>
-            <li><a href="">Оферта</a></li>
-            <li><a href="">Политика конфиденциальности</a></li>
-            <li><a href="">Как продать все вещи в Стиме сразу</a></li>
-        </ul>
-    </div>
-    <div class="f-center">
-        <ul>
-            <li><a href="">Купить скины</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Отзывы о нас</a></li>
-            <li><a href="">Продать вещи Steam</a></li>
-        </ul>
-    </div>
-    <div class="f-right">
-        <ul>
-            <li><a href="">Гарантии</a></li>
-            <li><a href="">Как это работает</a></li>
-            <li><a href="">Правила использования</a></li>
-            <li><a href="">Продать скины КС ГО</a></li>
-        </ul>
-    </div>
-</div>
-<div class="f-low-box">
-    <div class="footer-txt">
-        <p>Beneficiary:INTERNATIONAL BUSINESS SYSTEMS S.R.L.</p>
-        <p>Reg. number:3-102-693823</p>
-        <p>Beneficiary's address:SAN JOSE-SANTA ANA,THREE HUNDRED AND FIFTY METERS OF THE RESTAURANT CEVICHE DEL REY, COSTA-RICA</p>
-    </div>
-    <div class="footer-logo">
+            <div class="container">
+    <div class="modal-footer-logo">
         <img src="img/f-logo.svg" alt="">
+    </div>
+    <div class="f-box-menu">
+        <div class="f-left">
+            <ul>
+                <li><a href="">Блог</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Оферта</a></li>
+                <li><a href="">Политика конфиденциальности</a></li>
+                <li><a href="">Как продать все вещи в Стиме сразу</a></li>
+            </ul>
+        </div>
+        <div class="f-center">
+            <ul>
+                <li><a href="">Купить скины</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Отзывы о нас</a></li>
+                <li><a href="">Продать вещи Steam</a></li>
+            </ul>
+        </div>
+        <div class="f-right">
+            <ul>
+                <li><a href="">Гарантии</a></li>
+                <li><a href="">Как это работает</a></li>
+                <li><a href="">Правила использования</a></li>
+                <li><a href="">Продать скины КС ГО</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="f-low-box">
+        <div class="footer-txt">
+            <p>Beneficiary:INTERNATIONAL BUSINESS SYSTEMS S.R.L.</p>
+            <p>Reg. number:3-102-693823</p>
+            <p>Beneficiary's address:SAN JOSE-SANTA ANA,THREE HUNDRED AND FIFTY METERS OF THE RESTAURANT CEVICHE DEL REY, COSTA-RICA</p>
+        </div>
+        <div class="footer-logo">
+            <img src="img/f-logo.svg" alt="">
+        </div>
     </div>
 </div>
 

@@ -15,37 +15,75 @@
 <!--    <link rel="stylesheet" href="css/animate.css">-->
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 
-<body>
+<body class="page page--skins">
     <div class="wrapper">
         <header class="header">
-            <!--*************-->
-            <div class="container-header">
-                <div class="container-hamburg" onclick="myFunction(this)" title="Работа с меню" aria-label="Кнопка для работы с меню">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <script>
-                    function myFunction(x) {
-                        x.classList.toggle("change");
-                    }
-                </script>
-                <nav class="item-menu ">
-                    <ul class="header__menu">
-                        <li><a href="#">Продать скины</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">бонусы</a></li>
-                        <li><img class="header_logo" src="img/head-icon.svg" alt="" /></li>
-                        <li><a href="#">гарантии</a></li>
-                        <li><a href="#">блог</a></li>
-                        <li><a href="#">купить скины</a></li>
-                    </ul>
-                </nav>
+            
+<div class="container-header">
+    <div class="head-modal-menu">
+        <div class="modal-head-logo">
+            <img src="img/f-logo.svg" alt="">
+        </div>
+        <nav class="mod-item-menu ">
+            <ul class="mod-header__menu">
+                <li><a href="#">Продать скины</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">бонусы</a></li>
+                <li><a href="#">гарантии</a></li>
+                <li><a href="#">блог</a></li>
+                <li><a href="#">купить скины</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="btn-modal">
+        <div class="container-hamburg" onclick="myFunction(this)" title="Работа с меню" aria-label="Кнопка для работы с меню">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <nav class="item-menu">
+        <ul class="header__menu">
+            <li><a href="#">Продать скины</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">бонусы</a></li>
+            <li><img class="header_logo" src="img/head-icon.svg" alt=""/></li>
+            <li><a href="#">гарантии</a></li>
+            <li><a href="#">блог</a></li>
+            <li><a href="#">купить скины</a></li>
+        </ul>
+    </nav>
+    
+    <div class="header__lk">
+        <a href="" class="catalog__price">
+            <div class="catalog__price-num">
+                <span>3 421.80</span>
+                <img src="img/rouble.svg" alt="">
             </div>
+            <img src="img/price-icon.svg" alt="">
+        </a>
+        <a href="" class="header__user">
+            <img src="img/user.svg" alt="">
+        </a>
+    </div>
+    
+</div>
+
+
+
+
+
         </header>
 
         <section class="skin _animate">
@@ -117,15 +155,16 @@
                         <div class="skin-info__props">
                             <div class="skin-info__props-title">Характеристики скина</div>
                             <div class="skin-props">
-                                <img style="left: 33%;" src="img/nav-arrow.svg" alt="" class="skin-props__arrow">
-                                <div class="skin-props__wrap">
-                                    <div style="width: 10%;" class="skin-props__item skin-props__item--purple"></div>
-                                    <div style="width: 10%;" class="skin-props__item skin-props__item--green"></div>
-                                    <div style="width: 10%;" class="skin-props__item skin-props__item--orange"></div>
-                                    <div style="width: 20%;" class="skin-props__item skin-props__item--pink"></div>
-                                    <div style="width: 50%;" class="skin-props__item skin-props__item--red"></div>
-                                </div>
-                            </div>
+    <img style="left: 33%;" src="img/nav-arrow.svg" alt="" class="skin-props__arrow">
+    <div class="skin-props__wrap">
+        <div style="width: 10%;" class="skin-props__item skin-props__item--purple"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--green"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--orange"></div>
+        <div style="width: 20%;" class="skin-props__item skin-props__item--pink"></div>
+        <div style="width: 50%;" class="skin-props__item skin-props__item--red"></div>
+    </div>
+</div>
+
 
                             <div class="skin-info__props-items">
                                 <div class="skin-info__props-item">
@@ -172,1197 +211,795 @@
             </div>
         </section>
 
-        <section class="catalog">
+        <section class="offer">
             <div class="container">
-                <div class="catalog__nav _animate">
-                    <button class="catalog__btn m-btn m-btn-red m-btn-rect">
-                        Обновить магазин
-                    </button>
-
-                    <div class="catalog__select custom-select">
-                        <select>
-                            <option>CS:GO</option>
-                            <option>Dota 2</option>
-                            <option>Rust</option>
-                        </select>
-                    </div>
-
-                    <fieldset class="catalog__search fg">
-                        <input type="text" placeholder="Поиск по скинам">
-                        <button class="catalog__search-btn">
-                            <img src="img/search-icon.svg" alt="">
-                        </button>
-                    </fieldset>
-
-                    <div class="catalog__select custom-select">
-                        <select>
-                            <option>Популярность</option>
-                            <option>Цена по убыванию</option>
-                            <option>Цена по возрастанию</option>
-                        </select>
-                    </div>
-
-                    <div class="catalog__price">
-                        <div class="catalog__price-num">
-                            <span>3 421.80</span>
-                            <img src="img/rouble.svg" alt="">
-                        </div>
-                        <img src="img/price-icon.svg" alt="">
-                    </div>
+                <h2 class="offer__title _animate">
+                    93 предложения
+                </h2>
+                <div class="offer__head _animate">
+                    <span>РАЗБЛОК. ЧЕРЕЗ</span>
+                    <span>FLOAT</span>
+                    <span>СТИКЕРЫ</span>
+                    <span>СТОИМОСТЬ</span>
                 </div>
-                <div class="_animate">
-                    <button class="catalog__filter-toggle m-btn m-btn-rect m-btn-dark">
-                        Открыть фильтр
-                    </button>
-                </div>
-                <div class="catalog__wrap">
-                    <div class="catalog__sidebar _animate">
-                        <div class="filter">
-                            <button class="filter__close">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#fff"/>
-                                </svg>
-                            </button>
-                            <div class="filter__group _active">
-                                <div class="filter__show">
-                                    <span>Цена (от-до)</span>
-                                    <img src="img/select-arrow.svg" alt="">
-                                </div>
-                                <div class="filter__hidden">
-                                    <div class="filter__prices">
-                                        <fieldset class="filter__price fg">
-                                            <input type="text" placeholder="0.00">
-                                        </fieldset>
-                                        <fieldset class="filter__price fg">
-                                            <input type="text" placeholder="0.00">
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter__group">
-                                <div class="filter__show">
-                                    <span>Тип</span>
-                                    <img src="img/select-arrow.svg" alt="">
-                                </div>
-                                <div class="filter__hidden">
-                                    <div class="filter__checks">
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Автомат</label>
-                                        </div>
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Нож</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter__group">
-                                <div class="filter__show">
-                                    <span>Качество</span>
-                                    <img src="img/select-arrow.svg" alt="">
-                                </div>
-                                <div class="filter__hidden">
-                                    <div class="filter__checks">
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Автомат</label>
-                                        </div>
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Нож</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter__group">
-                                <div class="filter__show">
-                                    <span>Float</span>
-                                    <img src="img/select-arrow.svg" alt="">
-                                </div>
-                                <div class="filter__hidden">
-                                    <div class="filter__checks">
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Автомат</label>
-                                        </div>
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Нож</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter__group _active">
-                                <div class="filter__show">
-                                    <span>Фаза</span>
-                                    <img src="img/select-arrow.svg" alt="">
-                                </div>
-                                <div class="filter__hidden">
-                                    <div class="filter__checks">
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Phase 1</label>
-                                        </div>
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Phase 2</label>
-                                        </div>
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Phase 3</label>
-                                        </div>
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Phase 4</label>
-                                        </div>
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Emerald</label>
-                                        </div>
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Sapphire</label>
-                                        </div>
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Ruby</label>
-                                        </div>
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Black Pearl</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter__group _active">
-                                <div class="filter__show">
-                                    <span>Игры</span>
-                                    <img src="img/select-arrow.svg" alt="">
-                                </div>
-                                <div class="filter__hidden">
-                                    <div class="filter__checks">
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>CS GO</label>
-                                        </div>
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Rust</label>
-                                        </div>
-                                        <div class="filter__check m-check">
-                                            <input type="checkbox">
-                                            <label>Dota</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="filter__btn m-btn m-btn-rect m-btn-dark">
-                                Сбросить фильтр
-                            </button>
+                <div class="offer__wrap _animate">
+                    <div class="offer__items">
+                        <div class="offer-card _animate">
+    <div class="offer-card__unblock" data-title="РАЗБЛОК. ЧЕРЕЗ:">
+        <img src="img/lock.svg" alt="">
+        <span>2 дня</span>
+    </div>
+    <div class="offer-card__props" data-title="FLOAT:">
+        <span class="offer-card__props-title">0.181189</span>
+        <div class="skin-props">
+    <img style="left: 55%;" src="img/nav-arrow.svg" alt="" class="skin-props__arrow">
+    <div class="skin-props__wrap">
+        <div style="width: 10%;" class="skin-props__item skin-props__item--purple"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--green"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--orange"></div>
+        <div style="width: 20%;" class="skin-props__item skin-props__item--pink"></div>
+        <div style="width: 50%;" class="skin-props__item skin-props__item--red"></div>
+    </div>
+</div>
+
+    </div>
+    <div class="catalog-card__slots" data-title="СТИКЕРЫ:">
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="offer-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
+            в корзину
+        </button>
+    </div>
+</div>
+
+                        <div class="offer-card _animate">
+    <div class="offer-card__unblock" data-title="РАЗБЛОК. ЧЕРЕЗ:">
+        <img src="img/lock.svg" alt="">
+        <span>2 дня</span>
+    </div>
+    <div class="offer-card__props" data-title="FLOAT:">
+        <span class="offer-card__props-title">0.181189</span>
+        <div class="skin-props">
+    <img style="left: 55%;" src="img/nav-arrow.svg" alt="" class="skin-props__arrow">
+    <div class="skin-props__wrap">
+        <div style="width: 10%;" class="skin-props__item skin-props__item--purple"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--green"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--orange"></div>
+        <div style="width: 20%;" class="skin-props__item skin-props__item--pink"></div>
+        <div style="width: 50%;" class="skin-props__item skin-props__item--red"></div>
+    </div>
+</div>
+
+    </div>
+    <div class="catalog-card__slots" data-title="СТИКЕРЫ:">
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="offer-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
+            в корзину
+        </button>
+    </div>
+</div>
+
+                        <div class="offer-card _animate">
+    <div class="offer-card__unblock" data-title="РАЗБЛОК. ЧЕРЕЗ:">
+        <img src="img/lock.svg" alt="">
+        <span>2 дня</span>
+    </div>
+    <div class="offer-card__props" data-title="FLOAT:">
+        <span class="offer-card__props-title">0.181189</span>
+        <div class="skin-props">
+    <img style="left: 55%;" src="img/nav-arrow.svg" alt="" class="skin-props__arrow">
+    <div class="skin-props__wrap">
+        <div style="width: 10%;" class="skin-props__item skin-props__item--purple"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--green"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--orange"></div>
+        <div style="width: 20%;" class="skin-props__item skin-props__item--pink"></div>
+        <div style="width: 50%;" class="skin-props__item skin-props__item--red"></div>
+    </div>
+</div>
+
+    </div>
+    <div class="catalog-card__slots" data-title="СТИКЕРЫ:">
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="offer-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
+            в корзину
+        </button>
+    </div>
+</div>
+
+                        <div class="offer-card _animate">
+    <div class="offer-card__unblock" data-title="РАЗБЛОК. ЧЕРЕЗ:">
+        <img src="img/lock.svg" alt="">
+        <span>2 дня</span>
+    </div>
+    <div class="offer-card__props" data-title="FLOAT:">
+        <span class="offer-card__props-title">0.181189</span>
+        <div class="skin-props">
+    <img style="left: 55%;" src="img/nav-arrow.svg" alt="" class="skin-props__arrow">
+    <div class="skin-props__wrap">
+        <div style="width: 10%;" class="skin-props__item skin-props__item--purple"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--green"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--orange"></div>
+        <div style="width: 20%;" class="skin-props__item skin-props__item--pink"></div>
+        <div style="width: 50%;" class="skin-props__item skin-props__item--red"></div>
+    </div>
+</div>
+
+    </div>
+    <div class="catalog-card__slots" data-title="СТИКЕРЫ:">
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="offer-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
+            в корзину
+        </button>
+    </div>
+</div>
+
+                        <div class="offer-card _animate">
+    <div class="offer-card__unblock" data-title="РАЗБЛОК. ЧЕРЕЗ:">
+        <img src="img/lock.svg" alt="">
+        <span>2 дня</span>
+    </div>
+    <div class="offer-card__props" data-title="FLOAT:">
+        <span class="offer-card__props-title">0.181189</span>
+        <div class="skin-props">
+    <img style="left: 55%;" src="img/nav-arrow.svg" alt="" class="skin-props__arrow">
+    <div class="skin-props__wrap">
+        <div style="width: 10%;" class="skin-props__item skin-props__item--purple"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--green"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--orange"></div>
+        <div style="width: 20%;" class="skin-props__item skin-props__item--pink"></div>
+        <div style="width: 50%;" class="skin-props__item skin-props__item--red"></div>
+    </div>
+</div>
+
+    </div>
+    <div class="catalog-card__slots" data-title="СТИКЕРЫ:">
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="offer-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
+            в корзину
+        </button>
+    </div>
+</div>
+
+                        <div class="offer-card _animate">
+    <div class="offer-card__unblock" data-title="РАЗБЛОК. ЧЕРЕЗ:">
+        <img src="img/lock.svg" alt="">
+        <span>2 дня</span>
+    </div>
+    <div class="offer-card__props" data-title="FLOAT:">
+        <span class="offer-card__props-title">0.181189</span>
+        <div class="skin-props">
+    <img style="left: 55%;" src="img/nav-arrow.svg" alt="" class="skin-props__arrow">
+    <div class="skin-props__wrap">
+        <div style="width: 10%;" class="skin-props__item skin-props__item--purple"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--green"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--orange"></div>
+        <div style="width: 20%;" class="skin-props__item skin-props__item--pink"></div>
+        <div style="width: 50%;" class="skin-props__item skin-props__item--red"></div>
+    </div>
+</div>
+
+    </div>
+    <div class="catalog-card__slots" data-title="СТИКЕРЫ:">
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="offer-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
+            в корзину
+        </button>
+    </div>
+</div>
+
+                        <div class="offer-card _animate">
+    <div class="offer-card__unblock" data-title="РАЗБЛОК. ЧЕРЕЗ:">
+        <img src="img/lock.svg" alt="">
+        <span>2 дня</span>
+    </div>
+    <div class="offer-card__props" data-title="FLOAT:">
+        <span class="offer-card__props-title">0.181189</span>
+        <div class="skin-props">
+    <img style="left: 55%;" src="img/nav-arrow.svg" alt="" class="skin-props__arrow">
+    <div class="skin-props__wrap">
+        <div style="width: 10%;" class="skin-props__item skin-props__item--purple"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--green"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--orange"></div>
+        <div style="width: 20%;" class="skin-props__item skin-props__item--pink"></div>
+        <div style="width: 50%;" class="skin-props__item skin-props__item--red"></div>
+    </div>
+</div>
+
+    </div>
+    <div class="catalog-card__slots" data-title="СТИКЕРЫ:">
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="offer-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
+            в корзину
+        </button>
+    </div>
+</div>
+
+                        <div class="offer-card _animate">
+    <div class="offer-card__unblock" data-title="РАЗБЛОК. ЧЕРЕЗ:">
+        <img src="img/lock.svg" alt="">
+        <span>2 дня</span>
+    </div>
+    <div class="offer-card__props" data-title="FLOAT:">
+        <span class="offer-card__props-title">0.181189</span>
+        <div class="skin-props">
+    <img style="left: 55%;" src="img/nav-arrow.svg" alt="" class="skin-props__arrow">
+    <div class="skin-props__wrap">
+        <div style="width: 10%;" class="skin-props__item skin-props__item--purple"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--green"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--orange"></div>
+        <div style="width: 20%;" class="skin-props__item skin-props__item--pink"></div>
+        <div style="width: 50%;" class="skin-props__item skin-props__item--red"></div>
+    </div>
+</div>
+
+    </div>
+    <div class="catalog-card__slots" data-title="СТИКЕРЫ:">
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="offer-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
+            в корзину
+        </button>
+    </div>
+</div>
+
+                        <div class="offer-card _animate">
+    <div class="offer-card__unblock" data-title="РАЗБЛОК. ЧЕРЕЗ:">
+        <img src="img/lock.svg" alt="">
+        <span>2 дня</span>
+    </div>
+    <div class="offer-card__props" data-title="FLOAT:">
+        <span class="offer-card__props-title">0.181189</span>
+        <div class="skin-props">
+    <img style="left: 55%;" src="img/nav-arrow.svg" alt="" class="skin-props__arrow">
+    <div class="skin-props__wrap">
+        <div style="width: 10%;" class="skin-props__item skin-props__item--purple"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--green"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--orange"></div>
+        <div style="width: 20%;" class="skin-props__item skin-props__item--pink"></div>
+        <div style="width: 50%;" class="skin-props__item skin-props__item--red"></div>
+    </div>
+</div>
+
+    </div>
+    <div class="catalog-card__slots" data-title="СТИКЕРЫ:">
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="offer-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
+            в корзину
+        </button>
+    </div>
+</div>
+
+                        <div class="offer-card _animate">
+    <div class="offer-card__unblock" data-title="РАЗБЛОК. ЧЕРЕЗ:">
+        <img src="img/lock.svg" alt="">
+        <span>2 дня</span>
+    </div>
+    <div class="offer-card__props" data-title="FLOAT:">
+        <span class="offer-card__props-title">0.181189</span>
+        <div class="skin-props">
+    <img style="left: 55%;" src="img/nav-arrow.svg" alt="" class="skin-props__arrow">
+    <div class="skin-props__wrap">
+        <div style="width: 10%;" class="skin-props__item skin-props__item--purple"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--green"></div>
+        <div style="width: 10%;" class="skin-props__item skin-props__item--orange"></div>
+        <div style="width: 20%;" class="skin-props__item skin-props__item--pink"></div>
+        <div style="width: 50%;" class="skin-props__item skin-props__item--red"></div>
+    </div>
+</div>
+
+    </div>
+    <div class="catalog-card__slots" data-title="СТИКЕРЫ:">
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+                <img src="img/slot.webp" alt="">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+        <div class="catalog-card__slot">
+            <div class="catalog-card__slot-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="offer-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
+            в корзину
+        </button>
+    </div>
+</div>
+
+                    </div>
+
+                    <div class="qualities">
+                        <h3 class="qualities__title _animate">ДРУГИЕ КАЧЕСТВА</h3>
+                        <div class="qualities__head _animate">
+                            <span>ИЗНОС</span>
+                            <span>СТОИМОСТЬ</span>
+                        </div>
+                        <div class="qualities__items">
+                            <div class="quality-card _animate">
+    <div class="quality-card__title">
+        Поношенное
+    </div>
+    <div class="quality-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-pink">
+            показать все
+        </button>
+    </div>
+</div>
+
+                            <div class="quality-card _animate">
+    <div class="quality-card__title">
+        Закаленное в боях
+    </div>
+    <div class="quality-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-pink">
+            показать все
+        </button>
+    </div>
+</div>
+
+                            <div class="quality-card _animate">
+    <div class="quality-card__title">
+        Немного поношенное
+    </div>
+    <div class="quality-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-pink">
+            показать все
+        </button>
+    </div>
+</div>
+
+                            <div class="quality-card _animate">
+    <div class="quality-card__title">
+        После полевых испытаний
+    </div>
+    <div class="quality-card__action">
+        <div class="catalog-card__price">
+            <span>321.80</span>
+            <img src="img/rouble.svg" alt="">
+        </div>
+        <button class="catalog-card__btn m-btn m-btn-rect m-btn-pink">
+            показать все
+        </button>
+    </div>
+</div>
+
                         </div>
                     </div>
-                    <div class="catalog__content">
-                        <div class="catalog__grid">
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-    </div>
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
 
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-            </div>
-        </div>
-    </div>
-    
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-    </div>
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-    </div>
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-            </div>
-        </div>
-    </div>
-    
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-    </div>
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-    </div>
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-            </div>
-        </div>
-    </div>
-    
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-    </div>
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-    </div>
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-            </div>
-        </div>
-    </div>
-    
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                            <div class="catalog-card _animate">
-    <div class="catalog-card__hours">
-        23 часа / FT / 0.2571
-    </div>
-    <a href="" class="catalog-card__img">
-        <img src="img/gun.webp" alt="">
-    </a>
-    <a href="" class="catalog-card__title">
-        AK-47 | Phantom Disruptor
-    </a>
-    <div class="catalog-card__price">
-        <span>321.80</span>
-        <img src="img/rouble.svg" alt="">
-    </div>
-    
-    
-    
-    <div class="catalog-card__slots">
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-        <div class="catalog-card__slot">
-            <div class="catalog-card__slot-wrap">
-                <img src="img/slot.webp" alt="">
-            </div>
-        </div>
-    </div>
-    
-    <button class="catalog-card__btn m-btn m-btn-rect m-btn-red">
-        в корзину
-    </button>
-    <div class="catalog-card__bought">
-        купили х161
-    </div>
-</div>
-
-                        </div>
-                        <div class="pagination _animate">
-                            <div class="pagination__title">Страницы:</div>
-                            <a href="" class="pagination__item _active">1</a>
-                            <a href="" class="pagination__item">2</a>
-                            <a href="" class="pagination__item">3</a>
-                            <a href="" class="pagination__item">4</a>
-                            <a href="" class="pagination__item">5</a>
+                    <div class="offer-desc">
+                        <h3 class="offer-desc__title">ОПИСАНИЕ</h3>
+                        <div class="offer-desc__text">
+                            <p>Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. На корпус нанесён особый окрас, словно меняющий форму оружия.</p>
+                            <p>Элементы питания продаются отдельно</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="categories">
-                    <h3 class="categories__title _animate">Категории</h3>
-                    <div class="categories__links _animate">
-                        <a href="">Sticker</a>
-                        <a href="">Sealed</a>
-                        <a href="">Graffiti</a>
-                        <a href="">AK-47</a>
-                        <a href="">P250</a>
-                        <a href="">MAC-10</a>
-                        <a href="">Tec-9</a>
-                        <a href="">M4A4</a>
-                        <a href="">P90</a>
-                        <a href="">AUG</a>
-                        <a href="">AWP</a>
-                        <a href="">Glock-18</a>
-                        <a href="">PP-Bizon</a>
-                        <a href="">Five-SeveN</a>
-                        <a href="">M9 Bayonet</a>
-                        <a href="">Flip Knife</a>
-                        <a href="">Bayonet</a>
-                        <a href="">Gut Knife</a>
-                        <a href="">Karambit</a>
-                        <a href="">Desert Eagle</a>
-                        <a href="">Sawed-Off</a>
-                        <a href="">XM1014</a>
-                        <a href="">Nova</a>
-                        <a href="">MP7</a>
-                        <a href="">SG 553</a>
-                        <a href="">UMP-45</a>
-                        <a href="">Galil AR</a>
-                        <a href="">MP9</a>
-                        <a href="">M4A1-S</a>
-                        <a href="">FAMAS</a>
-                        <a href="">Dual Berettas</a>
-                        <a href="">CZ75-Auto</a>
-                        <a href="">USP-S</a>
-                        <a href="">MAG-7</a>
-                        <a href="">G3SG1</a>
-                        <a href="">P2000</a>
-                        <a href="">SCAR-20</a>
-                        <a href="">SSG 08</a>
-                        <a href="">Autograph Capsule</a>
-                        <a href="">Shadow Daggers</a>
-                        <a href="">Huntsman Knife</a>
-                        <a href="">Bowie Knife</a>
-                        <a href="">Falchion Knife</a>
-                        <a href="">Butterfly Knife</a>
-                        <a href="">Stiletto Knife</a>
-                        <a href="">Talon Knife</a>
-                        <a href="">Navaja Knife</a>
-                        <a href="">Ursus Knife</a>
-                        <a href="">Negev</a>
-                        <a href="">Music Kit</a>
-                        <a href="">M249</a>
-                        <a href="">R8 Revolver</a>
-                        <a href="">Classic Knife</a>
-                        <a href="">Skeleton Knife</a>
-                        <a href="">Survival Knife</a>
-                        <a href="">Paracord Knife</a>
-                        <a href="">Nomad Knife</a>
-                        <a href="">Sport Gloves</a>
-                        <a href="">Hand Wraps</a>
-                        <a href="">Moto Gloves</a>
-                        <a href="">Driver Gloves</a>
-                        <a href="">Specialist Gloves</a>
-                        <a href="">MP5-SD</a>
-                        <a href="">StatTrak™ M249</a>
-                        <a href="">Patch</a>
-                        <a href="">Bloodhound Gloves</a>
-                        <a href="">Hydra Gloves</a>
-                    </div>
-                </div>
+    <h3 class="categories__title _animate">Категории</h3>
+    <div class="categories__links _animate">
+        <a href="">Sticker</a>
+        <a href="">Sealed</a>
+        <a href="">Graffiti</a>
+        <a href="">AK-47</a>
+        <a href="">P250</a>
+        <a href="">MAC-10</a>
+        <a href="">Tec-9</a>
+        <a href="">M4A4</a>
+        <a href="">P90</a>
+        <a href="">AUG</a>
+        <a href="">AWP</a>
+        <a href="">Glock-18</a>
+        <a href="">PP-Bizon</a>
+        <a href="">Five-SeveN</a>
+        <a href="">M9 Bayonet</a>
+        <a href="">Flip Knife</a>
+        <a href="">Bayonet</a>
+        <a href="">Gut Knife</a>
+        <a href="">Karambit</a>
+        <a href="">Desert Eagle</a>
+        <a href="">Sawed-Off</a>
+        <a href="">XM1014</a>
+        <a href="">Nova</a>
+        <a href="">MP7</a>
+        <a href="">SG 553</a>
+        <a href="">UMP-45</a>
+        <a href="">Galil AR</a>
+        <a href="">MP9</a>
+        <a href="">M4A1-S</a>
+        <a href="">FAMAS</a>
+        <a href="">Dual Berettas</a>
+        <a href="">CZ75-Auto</a>
+        <a href="">USP-S</a>
+        <a href="">MAG-7</a>
+        <a href="">G3SG1</a>
+        <a href="">P2000</a>
+        <a href="">SCAR-20</a>
+        <a href="">SSG 08</a>
+        <a href="">Autograph Capsule</a>
+        <a href="">Shadow Daggers</a>
+        <a href="">Huntsman Knife</a>
+        <a href="">Bowie Knife</a>
+        <a href="">Falchion Knife</a>
+        <a href="">Butterfly Knife</a>
+        <a href="">Stiletto Knife</a>
+        <a href="">Talon Knife</a>
+        <a href="">Navaja Knife</a>
+        <a href="">Ursus Knife</a>
+        <a href="">Negev</a>
+        <a href="">Music Kit</a>
+        <a href="">M249</a>
+        <a href="">R8 Revolver</a>
+        <a href="">Classic Knife</a>
+        <a href="">Skeleton Knife</a>
+        <a href="">Survival Knife</a>
+        <a href="">Paracord Knife</a>
+        <a href="">Nomad Knife</a>
+        <a href="">Sport Gloves</a>
+        <a href="">Hand Wraps</a>
+        <a href="">Moto Gloves</a>
+        <a href="">Driver Gloves</a>
+        <a href="">Specialist Gloves</a>
+        <a href="">MP5-SD</a>
+        <a href="">StatTrak™ M249</a>
+        <a href="">Patch</a>
+        <a href="">Bloodhound Gloves</a>
+        <a href="">Hydra Gloves</a>
+    </div>
+</div>
 
-                <div class="desc">
-                    <div class="desc__group _animate">
-                        <div class="desc__text">
-                            <p>Всем желающим купить скины CS GO стоит обязательно посетить торговую площадку Lis-Skins. У нас представлены тысячи годных товаров на любой вкус и запрос. В магазине ты найдешь только оригинальные предметы, которые можно приобрести здесь и сейчас.</p>
-                            <p>Скины кс го по низким ценам, доступные стикеры, патчи, агенты и прочий скарб из популярного шутера удобно расположены по категориям. Воспользуйся системой фильтров, чтобы найти необходимый товар.</p>
-                        </div>
-                    </div>
+<div class="desc">
+    <div class="desc__group _animate">
+        <div class="desc__text">
+            <p>Всем желающим купить скины CS GO стоит обязательно посетить торговую площадку Lis-Skins. У нас представлены тысячи годных товаров на любой вкус и запрос. В магазине ты найдешь только оригинальные предметы, которые можно приобрести здесь и сейчас.</p>
+            <p>Скины кс го по низким ценам, доступные стикеры, патчи, агенты и прочий скарб из популярного шутера удобно расположены по категориям. Воспользуйся системой фильтров, чтобы найти необходимый товар.</p>
+        </div>
+    </div>
 
-                    <div class="desc__group _animate">
-                        <h3 class="desc__title">
-                            С ПРИЦЕЛОМ НА КЛИЕНТА
-                        </h3>
-                        <div class="desc__text">
-                            <p>У тебя есть ненужные скины CS:GO из стим? Сдай их в магазин Lis-Skins.ru, чтобы обменять на уникальную винтовку M4A1-S, AWP или AK-47, о которой давно мечтал. Мы выкупаем предметы за реальные деньги, которые остаются на твоем личном счете. Можешь вывести на карту, или сразу же заполучить крутой пистолет или ножик. Никаких подводных камней и сложных схем — все предельно прозрачно.</p>
-                            <p>Нашел дешевые скины в КС ГО на сторонних площадках? У нас они еще доступнее. Регулярные акции, бандлы и выгодные предложения постоянно прилетают на твой email, если подпишешься на наше рассылку.</p>
-                            <p>Ассортимент постоянно пополняется. Всегда в наличии скины кс го по недорогим ценам, которые гораздо приятнее, чем в Steam. Покупка будет моментально переправлена в твой инвентарь нашим ботом.</p>
-                        </div>
-                    </div>
+    <div class="desc__group _animate">
+        <h3 class="desc__title">
+            С ПРИЦЕЛОМ НА КЛИЕНТА
+        </h3>
+        <div class="desc__text">
+            <p>У тебя есть ненужные скины CS:GO из стим? Сдай их в магазин Lis-Skins.ru, чтобы обменять на уникальную винтовку M4A1-S, AWP или AK-47, о которой давно мечтал. Мы выкупаем предметы за реальные деньги, которые остаются на твоем личном счете. Можешь вывести на карту, или сразу же заполучить крутой пистолет или ножик. Никаких подводных камней и сложных схем — все предельно прозрачно.</p>
+            <p>Нашел дешевые скины в КС ГО на сторонних площадках? У нас они еще доступнее. Регулярные акции, бандлы и выгодные предложения постоянно прилетают на твой email, если подпишешься на наше рассылку.</p>
+            <p>Ассортимент постоянно пополняется. Всегда в наличии скины кс го по недорогим ценам, которые гораздо приятнее, чем в Steam. Покупка будет моментально переправлена в твой инвентарь нашим ботом.</p>
+        </div>
+    </div>
 
-                    <div class="desc__group _animate">
-                        <h3 class="desc__title">
-                            ВСЕ В ОДНОМ МЕСТЕ
-                        </h3>
-                        <div class="desc__text">
-                            <p>Привлекай своего друга, который до сих пор не знает, где можно купить скины кс го дешево, предварительно рассмотрев их во всех подробностях и прочитав описание. Мы скрупулезно относимся к качеству предоставляемых услуг по продаже и обмену товаров, и не можем позволить себе задержек при проведении сделок.</p>
-                            <p>А хочешь заработать, сидя в удобном кресле? Зарегистрируйся на сайте Lis-Skins.ru, создай свою реферальную ссылку и отправь своим друзьям. Пусть они тоже знают где купить скины по низким ценам и с максимальной выгодой.</p>
-                            <p>Больше знакомых — выше гонорар.</p>
-                            <p>Мы работаем со всеми популярными платежными системами и показываем реальную стоимость предметов. Никаких скрытых комиссий и дополнительных отчислений — все прозрачно.</p>
-                            <p>Хочешь купить скины CS GO — заходи на Lis-Skins.ru.</p>
-                        </div>
-                    </div>
-
-
+    <div class="desc__group _animate">
+        <h3 class="desc__title">
+            ВСЕ В ОДНОМ МЕСТЕ
+        </h3>
+        <div class="desc__text">
+            <p>Привлекай своего друга, который до сих пор не знает, где можно купить скины кс го дешево, предварительно рассмотрев их во всех подробностях и прочитав описание. Мы скрупулезно относимся к качеству предоставляемых услуг по продаже и обмену товаров, и не можем позволить себе задержек при проведении сделок.</p>
+            <p>А хочешь заработать, сидя в удобном кресле? Зарегистрируйся на сайте Lis-Skins.ru, создай свою реферальную ссылку и отправь своим друзьям. Пусть они тоже знают где купить скины по низким ценам и с максимальной выгодой.</p>
+            <p>Больше знакомых — выше гонорар.</p>
+            <p>Мы работаем со всеми популярными платежными системами и показываем реальную стоимость предметов. Никаких скрытых комиссий и дополнительных отчислений — все прозрачно.</p>
+            <p>Хочешь купить скины CS GO — заходи на Lis-Skins.ru.</p>
+        </div>
+    </div>
 
 
-                </div>
+
+
+</div>
+
             </div>
         </section>
 
 
         <footer class="footer">
-            <div class="modal-footer-logo">
-    <img src="img/f-logo.svg" alt="">
-</div>
-<div class="f-box-menu">
-    <div class="f-left">
-        <ul>
-            <li><a href="">Блог</a></li>
-            <li><a href="">Контакты</a></li>
-            <li><a href="">Оферта</a></li>
-            <li><a href="">Политика конфиденциальности</a></li>
-            <li><a href="">Как продать все вещи в Стиме сразу</a></li>
-        </ul>
-    </div>
-    <div class="f-center">
-        <ul>
-            <li><a href="">Купить скины</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Отзывы о нас</a></li>
-            <li><a href="">Продать вещи Steam</a></li>
-        </ul>
-    </div>
-    <div class="f-right">
-        <ul>
-            <li><a href="">Гарантии</a></li>
-            <li><a href="">Как это работает</a></li>
-            <li><a href="">Правила использования</a></li>
-            <li><a href="">Продать скины КС ГО</a></li>
-        </ul>
-    </div>
-</div>
-<div class="f-low-box">
-    <div class="footer-txt">
-        <p>Beneficiary:INTERNATIONAL BUSINESS SYSTEMS S.R.L.</p>
-        <p>Reg. number:3-102-693823</p>
-        <p>Beneficiary's address:SAN JOSE-SANTA ANA,THREE HUNDRED AND FIFTY METERS OF THE RESTAURANT CEVICHE DEL REY, COSTA-RICA</p>
-    </div>
-    <div class="footer-logo">
+            <div class="container">
+    <div class="modal-footer-logo">
         <img src="img/f-logo.svg" alt="">
+    </div>
+    <div class="f-box-menu">
+        <div class="f-left">
+            <ul>
+                <li><a href="">Блог</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Оферта</a></li>
+                <li><a href="">Политика конфиденциальности</a></li>
+                <li><a href="">Как продать все вещи в Стиме сразу</a></li>
+            </ul>
+        </div>
+        <div class="f-center">
+            <ul>
+                <li><a href="">Купить скины</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Отзывы о нас</a></li>
+                <li><a href="">Продать вещи Steam</a></li>
+            </ul>
+        </div>
+        <div class="f-right">
+            <ul>
+                <li><a href="">Гарантии</a></li>
+                <li><a href="">Как это работает</a></li>
+                <li><a href="">Правила использования</a></li>
+                <li><a href="">Продать скины КС ГО</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="f-low-box">
+        <div class="footer-txt">
+            <p>Beneficiary:INTERNATIONAL BUSINESS SYSTEMS S.R.L.</p>
+            <p>Reg. number:3-102-693823</p>
+            <p>Beneficiary's address:SAN JOSE-SANTA ANA,THREE HUNDRED AND FIFTY METERS OF THE RESTAURANT CEVICHE DEL REY, COSTA-RICA</p>
+        </div>
+        <div class="footer-logo">
+            <img src="img/f-logo.svg" alt="">
+        </div>
     </div>
 </div>
 
